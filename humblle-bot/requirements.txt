@@ -1,0 +1,5 @@
+pymongo
+Flask
+Flask-RESTful
+Flask-SQLAlchemy
+langchain
