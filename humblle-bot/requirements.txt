@@ -1,4 +1,5 @@
 pymongo
+openai
 Flask
 Flask-RESTful
 Flask-SQLAlchemy

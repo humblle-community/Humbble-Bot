@@ -10,15 +10,12 @@ api = Api(app)
 def index():
     return render_template('index.html')
 
-@app.route('/image', method=['GET', 'POST'])
+@app.route('/image', methods=['GET', 'POST'])
 def up_image():
-    model = ImageDB()
     if request.method == 'GET':
-        model.image = request.form.get('image')
+        pass
     elif request.method == 'POST':
-        model.image = request.form['image']
-        db.session.add(model)
-        db.session.commit()
+        pass
     else:
         return {'method': 'not found'}
     

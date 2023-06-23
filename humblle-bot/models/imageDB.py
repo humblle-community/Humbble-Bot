@@ -1,10 +1,7 @@
-from app import api
-from extension.ext_database import db
+from flask_restful import Api, Resource
 
-class ImageDB():
+class ImageDB(Resource):
     def post(self):
         pass
     def get(self):
         pass
-    
-api.add_resource(ImageDB)
